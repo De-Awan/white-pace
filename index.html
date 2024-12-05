@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhitePace</title>
+  <link rel="stylesheet" href="style.css">
+    <!-- Link To Custom CSS Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Font Awesome Icons Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+  
+    <!-- Owl Carousel Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- JQuery Link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+<!-- Owl Carousel js Link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- Link To Custom Script File -->
+<script type="text/javascript" src="main.js"></script>
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="home">Products</a></li>
+      <li><a href="products">Solutions</a></li>
+      <li><a href="about">Resources</a></li>
+      <li><a href="login">Pricing</a></li>
+    </ul>
+    
+    <ul>
+      <li><a href="#"><img src="img/Logo.png" alt=""></a></li>
+      <li class="hideOnMobile"><a href="home">Products</a></li>
+      <li class="hideOnMobile"><a href="products">Solutions</a></li>
+      <li class="hideOnMobile"><a href="about">Resources</a></li>
+      <li class="hideOnMobile"><a href="login">Pricing</a></li>
+      <li> <div class="nav-btn-1"><a href="#">login</a></div></li>
+      <li> <div class="nav-btn-2"><a href="#">Try whitepace <svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></a></div></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+
+  <section class="hero" id="home">
+    <div class="hero-heading">
+      <div class="teks-hero">
+        <h1>Get More Done WhitePace</h1>
+        <p>Project management softwere that enables your team to collaborate plan, analize and manage eferyday tasks</p>
+    
+        <a href="">Try Taskey Free<svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></a>
+      </div>
+    
+    <img src="img/Image-container.png" alt="">
+  </div>
+  </section>
+
+  <section class="double">
+  <section class="projek" id="projek">
+    <div class="teks-projek">
+        <h1>Project Management</h1>
+        <p>Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Take photos with the mobile app and save them to a note.</p>
+    <a href="">Get Started<svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></a>
+  </div>
+    <img src="img/Image-container.png" alt="">
+  </section>
+
+  <section class="work" id="products">
+    <img src="img/Work Together Image.png" alt="">
+    <div class="teks-work">
+    <h1>Work together</h1>
+        <p>With whitepace, share your notes with your colleagues and collaborate on them.
+          You can also publish a note to the internet and share the URL with others.</p>
+    <a href="">Get Started<svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></a>
+    </div>
+  </section>
+</section>
+
+<section class="extension" id="about">
+    <div class="teks-extension">
+        <h1>Use as Extension</h1>
+        <p>Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes.
+        </p>
+    <a href="">Let's Go<svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></a>
+  </div>
+    <img src="img/Image-container.png" alt="">
+  </section>
+
+  <section class="customise" id="about">
+    <img src="img/Image-container.png" alt="">
+    <div class="teks-customise">
+        <h3>Customise it to your needs</h3>
+        <p>Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.</p>
+    <a href="">Let's Go<svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></a>
+    </div>
+  </section>
+  
+  <section class="plans">
+    <div class="teks-plans">
+      <h1>Choose Your Plan</h1>
+      <p>Whether you want to get organized, keep your personal life on track, or boost workplace productivity, Evernote has the right plan for you.</p>
+    </div>
+    <div class="slider">
+        <div class="card" id="organization-plan">
+            <h2>Free</h2>
+            <h3>$0</h3>
+            <ul>
+                <li><i class="fas fa-check"></i> Capture ideas and files</li>
+                <li><i class="fas fa-check"></i> Sync unlimited devices</li>
+                <li><i class="fas fa-check"></i> 10 GB monthly uploads</li>
+                <li><i class="fas fa-check"></i> 200 MB max. note size</li>
+                <li><i class="fas fa-check"></i> Customize Home dashboard and access extra widgets</li>
+                <li><i class="fas fa-check"></i> Connect primary Google Calendar account</li>
+                <li><i class="fas fa-check"></i> Add due dates, reminders, and notifications to your tasks</li>
+            </ul>
+            <button>Get Started</button>
+        </div>
+        <div class="card active" id="personal-plan">
+            <h2>Personal</h2>
+            <h3>$11.2</h3>
+            <ul>
+                <li><i class="fas fa-check"></i> Keep home and family on track</li>
+                <li><i class="fas fa-check"></i> Sync unlimited devices</li>
+                <li><i class="fas fa-check"></i> 10 GB monthly uploads</li>
+                <li><i class="fas fa-check"></i> 200 MB max. note size</li>
+                <li><i class="fas fa-check"></i> Customize Home dashboard and access extra widgets</li>
+                <li><i class="fas fa-check"></i> Connect primary Google Calendar account</li>
+                <li><i class="fas fa-check"></i> Add due dates, reminders, and notifications to your tasks</li>
+            </ul>
+            <div class="kkk">
+            <button>Get Started</button>
+            </div>
+        </div>
+        <div class="card" id="organization-plan">
+            <h2>Organization</h2>
+            <h3>$49.99</h3>
+            <ul>
+                <li><i class="fas fa-check"></i> Capture ideas and files</li>
+                <li><i class="fas fa-check"></i> Sync unlimited devices</li>
+                <li><i class="fas fa-check"></i> 10 GB monthly uploads</li>
+                <li><i class="fas fa-check"></i> 200 MB max. note size</li>
+                <li><i class="fas fa-check"></i> Customize Home dashboard and access extra widgets</li>
+                <li><i class="fas fa-check"></i> Connect primary Google Calendar account</li>
+                <li><i class="fas fa-check"></i> Add due dates, reminders, and notifications to your tasks</li>
+            </ul>
+            <button>Get Started</button>
+        </div>
+    </div>
+</section> 
+
+  <section class="yourwork">
+    <div class="teks-yourwork">
+    <h1>Your work, everywhere <span>you are</span></h1>
+    <p>Access your notes from your computer, phone or tablet by synchronising with various services, including whitepace, Dropbox and OneDrive. The app is available on Windows, macOS, Linux, Android and iOS. A terminal app is also available!</p>
+    <a href="">Try Taskey</a>
+  </div>
+  </section>
+  
+  <section class="yourdata">
+    <div class="teks-yourdata">
+        <h1>100% your data</h1>
+        <p>The app is open source and your notes are saved to an open format, so you'll always have access to them. Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.</p>
+    <a href="">Get Started<svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></a>
+    </div>
+    <img src="img/Element.png" alt="">
+  </section>
+  
+  <section class="sponsor">
+    <h1>Our sponsor</h1>
+    <div class="sponsor-logo" >
+    <img src="img/Apple.png" alt="" style="max-width: 5%;">
+    <img src="img/microsoft 1.png" alt="">
+    <img src="img/Group 246.png" alt="">
+    <img src="img/Slack.png" alt="">
+    </div>
+  </section>
+
+  <section class="workwith" id="">
+    <img src="img/Apps.png" alt="">
+    <main>
+        <h1>Work with Your Favorite Apps Using whitepace</h1>
+        <p>Whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier to have all the tools you need for your project success.</p>
+    <a href="">Read more<svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></a>
+    </main>
+ </section>
+  
+
+
+
+ <div class="testimonials-section">
+  
+  <!-- Section Header Starts -->
+  <header class="section-header">
+    <h1>What Clients Say</h1>
+  </header>
+  <!-- Section Header Ends -->
+
+  <!-- Owl Carousel Slider Starts -->
+  <div class="owl-carousel owl-theme testimonials-container">
+    <!-- Item1 Starts -->
+    <div class="item testimonial-card">
+      <main class="test-card-body">
+        <div class="quote">
+          <i><img src="img/Group2.png" alt="quote icon"></i>
+        </div>
+        <p>Whitepate is designed as a collaboration tool for businesses that is a full project management solution.</p>
+        <hr>
+      </main>
+      <div class="profile">
+        <div class="profile-image">
+          <img src="img/Avater.png">
+        </div>
+        <div class="profile-desc">
+          <span>Oberon Shaw, MCH</span>
+          <span>Head of Talent Acquisition, North America</span>
+        </div>
+      </div>
+    </div>
+    <!-- Item1 Ends -->
+
+    <!-- Item2 Starts -->
+    <div class="item testimonial-card">
+      <main class="test-card-body">
+        <div class="quote">
+          <i><img src="img/Group2.png" alt="quote icon"></i>
+        </div>
+        <p>Whitepate is designed as a collaboration tool for businesses that is a full project management solution.</p>
+        <hr>
+      </main>
+      <div class="profile">
+        <div class="profile-image">
+          <img src="img/Avater2.png">
+        </div>
+        <div class="profile-desc">
+          <span>Oberon Shaw, MCH</span>
+          <span>Head of Talent Acquisition, North America</span>
+        </div>
+      </div>
+    </div>
+    <!-- Item2 Ends -->
+
+    <!-- Item3 Starts -->
+    <div class="item testimonial-card">
+      <main class="test-card-body">
+        <div class="quote">
+          <i><img src="img/Group2.png" alt="quote icon"></i>
+        </div>
+        <p>Whitepate is designed as a collaboration tool for businesses that is a full project management solution.</p>
+        <hr>
+      </main>
+      <div class="profile">
+        <div class="profile-image">
+          <img src="img/Avater3.png">
+        </div>
+        <div class="profile-desc">
+          <span>Oberon Shaw, MCH</span>
+          <span>Head of Talent Acquisition, North America</span>
+        </div>
+      </div>
+    </div>
+    <!-- Item3 Ends -->
+  </div>
+</div>
+
+  <section>
+    <div class="try-whitepace">
+      <h1>Try Whitepace today</h1>
+      <p>Get started for free.</p>
+      <p>Add your whole team as your needs grow.</p>
+      <a href="#">Try Taskey free</a>
+      <p>On a big team? Contact sales</p>
+      <img src="img/apple-black-logo 2.png" alt="">
+      <img src="img/windows-logo 1.png" alt="">
+      <img src="img/android-logo 1.png" alt="">
+    </div>
+    <div>
+    </section>
+      
+ <footer class="footer">
+  <div class="conteiner">
+    <div class="row">
+      <div>
+        <img src="img/Logo.png" alt="">
+        <ul>
+          <li><p>whitepace was created for </p></li>
+          <li><p>the new ways we live and </p></li>
+          <li><p>work. We make a better</p></li>
+          <li><p>workspace around the world</p></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+       <h4>Product</h4>
+        <ul>
+       <li><a href="">Overview</a></li>
+        <li><a href="">Pricing</a></li>
+        <li><a href="">Customer stories</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+        <li><a href="">blog</a></li>
+        <li><a href="">Guides & tutorials</a></li>
+        <li><a href="">Help center</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+        <li><a href="">About us</a></li>
+        <li><a href="">Careers</a></li>
+        <li><a href="">Media kit</a></li>
+        </ul>
+      </div>
+      <div class="try">
+        <h3>Try It Today</h3>
+        <p>Get started for </p>
+        <p>Add your whole team as your needs grow.</p>
+        <a href="">Start today<svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="footer-bottom">
+    <div class="footer-bottom-left">
+        <span><img src="img/globe.png" alt=""> English <img src="img/Arrow.png" alt=""></span>
+        <span>Terms & privacy</span>
+        <span>Security</span>
+        <span>Status</span>
+        <span>©2021 Whitepace LLC.</span>
+    </div>
+    
+    <div class="footer-bottom-right">
+      
+        <span><img src="img/Icon_11_.png" alt="_Facebook"></span>
+        <span><img src="img/Twitter.png" alt="Twetter"></span>
+        <span><img src="img/Linkedin.png" alt="linkedin"></span>
+    </div>
+</div>
+ </footer>
+
+</body>
+</html>
